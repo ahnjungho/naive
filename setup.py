@@ -9,7 +9,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 setup(
     name='naive',
-    version='0.0.1',
+    version='0.0.2',
     description='A naive static site generator',
     long_description=long_description,
     url='https://github.com/ahnjungho/naive',
@@ -29,11 +29,11 @@ setup(
 
     packages=['naive'],
 
-    # install_requires=['markdown'],
+    install_requires=['Markdown', 'Jinja2', 'libsass', 'PyYAML'],
 
     entry_points={
         'console_scripts': [
-            'naive=naive:hello',
+            'naive=naive:main',
         ],
     },
 
