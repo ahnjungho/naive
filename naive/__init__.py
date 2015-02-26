@@ -42,7 +42,6 @@ class Post():
         tz = timezone(timedelta(hours=settings['TIMEZONE_OFFSET_HOUR']))
         self.title = md.Meta['title'][0]
         self.date = date.replace(tzinfo=tz)
-        self.datestr = self.date.strftime('%A, %B %d, %Y')
         self.modified = md.Meta['modified'][0]
         self.category = md.Meta['category'][0]
         self.tags = md.Meta['tags']

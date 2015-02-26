@@ -9,7 +9,7 @@ with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 setup(
     name='naive',
-    version='0.0.2',
+    version='0.0.3',
     description='A naive static site generator',
     long_description=long_description,
     url='https://github.com/ahnjungho/naive',
